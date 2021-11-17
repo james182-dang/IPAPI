@@ -40,3 +40,5 @@ Beer.init(
         modelName: 'beer'
     }
 );
+
+module.exports = Beer;
