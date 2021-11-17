@@ -27,6 +27,10 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        age: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
