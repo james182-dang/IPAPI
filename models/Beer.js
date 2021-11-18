@@ -16,21 +16,9 @@ Beer.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        abv: {
-            type: DataTypes.INTEGER,
+        type: {
+            type: DataTypes.STRING,
             allowNull: false
-        },
-        ibu: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        },
-        srm: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        },
-        upc: {
-            type: DataTypes.INTEGER,
-            allowNull: true
         }
     },
     {
