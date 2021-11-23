@@ -12,11 +12,15 @@ Beer.init(
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        beer_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        type: {
+        brewery: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        beer_type: {
             type: DataTypes.STRING,
             allowNull: false
         }
