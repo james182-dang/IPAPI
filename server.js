@@ -4,6 +4,7 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
+const StreamChat = require('stream-chat').StreamChat;
 const hbs = exphbs.create({ helpers });
 
 const app = express();
