@@ -18,7 +18,7 @@ async function initializeClient() {
         image: 'https://bit.ly/2u9Vc0r' // user image
       },
       token
-    ); // token generated from our Node server
+    );
   
     await listUsers();
 

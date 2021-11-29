@@ -33,8 +33,10 @@ Beer.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'beer'
+        modelName: 'Beer'
     }
 );
+
+
 
 module.exports = Beer;

@@ -12,17 +12,32 @@
 //             primaryKey: true,
 //             autoIncrement: true
 //         },
-//         beerType: {
+//         name: {
 //             type: DataTypes.STRING,
+//             allowNull: false
+//         },
+//         beers_included: {
+//             type: DataTypes.INTEGER,
 //             references: {
 //                 model: 'beer',
-//                 key: 'beer_type'
+//                 key: 'id'
 //             }
 //         },
+//         users_included: {
+//             type: DataTypes.INTEGER,
+//             references: {
+//                 model: 'user',
+//                 key: 'favorite'
+//             }
+//         },
+//     },
+//     {    
 //         sequelize,
 //         timestamps: false,
 //         freezeTableName: true,
 //         underscored: true,
-//         modelName: 'beerType'
+//         modelName: 'BeerType'
 //     }
-// )
+// );
+
+// module.exports = BeerType;
