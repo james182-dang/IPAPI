@@ -39,6 +39,10 @@ User.init(
                 isEmail: true
             }
         },
+        state: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         favorite: {
             type: DataTypes.INTEGER,
             references: {
