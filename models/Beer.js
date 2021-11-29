@@ -23,6 +23,10 @@ Beer.init(
         beer_type: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        created_at: {
+            type: DataTypes.TIME,
+            allowNull: true
         }
     },
     {

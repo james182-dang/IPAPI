@@ -11,7 +11,8 @@
     "express-handlebars": "^6.0.1",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.9.0"
+    "sequelize": "^6.9.0",
+    "stream-chat": "^4.4.3"
   },
   "devDependencies": {},
   "scripts": {
