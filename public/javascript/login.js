@@ -2,26 +2,29 @@ async function signupFormHandler(event) {
     event.preventDefault();
 
     const username = document.querySelector('#username-signup').value.trim();
-    const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
     const age = document.querySelector('#age-signup').value.trim();
     const firstName = document.querySelector('#firstName-signup').value.trim();
+    const favorite = document.querySelector('#inputStateDrink').value.trim();
+    const state = document.querySelector('#inputStateState').value.trim();
 
-    if (username && email && password && age && firstName) {
+    if (username && favorite && state && password && age && firstName) {
         const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
                 username,
-                email,
                 password,
                 age,
-                firstName
+                firstName,
+                favorite,
+                state
             }),
             headers: { 'Content-Type': 'application/json' }
         });
 
         if (response.ok) {
             console.log('success');
+            document.location.replace('/profile');
         } else {
             alert(response.statusText);
         }
@@ -45,12 +48,12 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/profile');
         } else {
             alert(response.statusText);
         }
     }
 }
 
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+//document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

@@ -6,4 +6,4 @@ User.belongsTo(Beer, {
     foreignKey: 'favorite'
 });
 
-// module.exports = { User, Beer };
+module.exports = { User, Beer };
