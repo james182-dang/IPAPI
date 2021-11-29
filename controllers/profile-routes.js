@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
         attributes: [
             'username',
             'first_name',
-            'age'
+            'favorite'
         ]
     })
       .then(dbUserData => {

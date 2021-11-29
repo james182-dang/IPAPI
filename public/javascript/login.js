@@ -6,6 +6,7 @@ async function signupFormHandler(event) {
     const password = document.querySelector('#password-signup').value.trim();
     const age = document.querySelector('#age-signup').value.trim();
     const firstName = document.querySelector('#firstName-signup').value.trim();
+    const favorite = document.querySelector('#inputState').value.trim();
 
     if (username && email && password && age && firstName) {
         const response = await fetch('/api/users', {
@@ -15,7 +16,8 @@ async function signupFormHandler(event) {
                 email,
                 password,
                 age,
-                firstName
+                firstName,
+                favorite
             }),
             headers: { 'Content-Type': 'application/json' }
         });
@@ -45,7 +47,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/profile');
         } else {
             alert(response.statusText);
         }
