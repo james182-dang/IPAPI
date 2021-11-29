@@ -1,5 +1,5 @@
 .body{
- background-image: url("..//IPAPI/images/logofinal.gif");
+ background-image: url("/images/logofinal.gif");
  background-size:cover;
 flex-shrink: inherit;
 }
