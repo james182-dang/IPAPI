@@ -6,7 +6,7 @@ const { User, Beer } = require('../models');
 router.get('/', (req, res) => {
     User.findOne({
         where: {
-            user_id: req.session.user_id
+            username: req.session.username
         },
         attributes: [
             'username',
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         ]
     })
       .then(dbUserData => {
-          const user = dbUserData.map(user => user.get({ plain: true }));
+          const user = dbUserData.get({ plain: true });
           res.render('profile', { User, loggedIn: true });
       })
       .catch(err => {
@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 router.get('/messaging', (req, res) => {
     User.findOne({
         where: {
-            user_id: req.session.user_id
+            username: req.session.username
         },
         attributes: [
             'username',
@@ -36,7 +36,7 @@ router.get('/messaging', (req, res) => {
         ]
     })
       .then(dbUserData => {
-          const user = dbUserData.map(user => user.get({ plain: true }));
+          const user = dbUserData.get({ plain: true });
           res.render('messaging', { User, loggedIn: true });
       })
       .catch(err => {
