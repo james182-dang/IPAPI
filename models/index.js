@@ -2,10 +2,8 @@
 const User = require('./User');
 const Beer = require('./Beer');
 
-User.hasOne(Beer, {
-    foreignKey: 'user_id'
+User.belongsTo(Beer, {
+    foreignKey: 'favorite'
 });
 
-Beer.hasMany(User, {
-    foreignKey: 'beer_id'
-});
+// module.exports = { User, Beer };

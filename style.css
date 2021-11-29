@@ -1,0 +1,107 @@
+.body{
+ background-image: url("..//IPAPI/images/logofinal.gif");
+ background-size:cover;
+flex-shrink: inherit;
+}
+.heading1{
+margin-left:auto;
+margin-right: auto;
+width: 70%;
+color: white;
+font-size: 100px;
+text-align: center;
+background: rgb(35,34,66);
+background: radial-gradient(circle, rgb(68, 61, 80) 9%, rgb(47, 42, 59) 77%);
+border-bottom: 1px solid rgb(255, 255, 255);
+border: 10%;
+text-shadow: -1px 0 rgb(187, 130, 55), 0 1px rgb(187, 130, 55), 1px 0 rgb(187, 130, 55), 0 -1px rgb(204, 174, 134);
+font-family: Arial, Helvetica, sans-serif;
+}
+.heading2{
+margin-left:auto;
+margin-right: auto;color: white;
+font-size: 20px;text-align: center;
+font-weight: 50;font-style: italic;
+margin-top: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+.login-boarder{
+background-color:rgb(82, 71, 100);
+width: 30%; 
+border: 5px solid rgb(255, 255, 255); 
+padding: 25px;
+border-radius: 5px;margin:auto;
+}
+.signup-boarder{
+background-color:rgb(82, 71, 100);
+border: 5px solid rgb(255, 255, 255); 
+padding: 25px;
+border-radius: 5px;margin:auto;
+width: 50%; 
+    }
+.login-table{
+table-layout:fixed;
+width: 100%; 
+margin: auto;
+}
+.signup-table{
+table-layout:fixed;
+margin: auto;
+width: 100%; 
+    }
+.welcome-message{
+text-align: center; 
+background-color: rgb(216, 180, 63);
+border-radius: 5px;color: rgb(60, 60, 95);
+border: 10px;
+border-color: azure;
+}
+.form-control{
+text-align: center;
+}
+.button-style{
+width: 10%; 
+margin: auto; text-align: 
+center;color: rgb(2, 2, 27)
+}
+.login-link{
+text-align: center;
+color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.profileH1{
+   
+    width: 90%;
+    color: white;
+    font-size: 60px;
+    text-align: left;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 0%;
+    text-shadow: -1px 0 rgb(187, 130, 55), 0 1px rgb(187, 130, 55), 1px 0 rgb(187, 130, 55), 0 -1px rgb(204, 174, 134);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.welcome-user{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+.Profile-Name{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}

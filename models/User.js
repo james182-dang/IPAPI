@@ -39,6 +39,13 @@ User.init(
                 isEmail: true
             }
         },
+        favorite: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'Beer',
+                key: 'id'
+            }
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -62,8 +69,9 @@ User.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'User'
     }
 );
+
 
 module.exports = User;

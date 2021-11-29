@@ -12,24 +12,20 @@ Beer.init(
             primaryKey: true,
             autoIncrement: true
         },
-        name: {
+        beer_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        abv: {
-            type: DataTypes.INTEGER,
+        brewery: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        beer_type: {
+            type: DataTypes.STRING,
             allowNull: false
         },
-        ibu: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        },
-        srm: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        },
-        upc: {
-            type: DataTypes.INTEGER,
+        created_at: {
+            type: DataTypes.TIME,
             allowNull: true
         }
     },
@@ -37,8 +33,10 @@ Beer.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'beer'
+        modelName: 'Beer'
     }
 );
+
+
 
 module.exports = Beer;
