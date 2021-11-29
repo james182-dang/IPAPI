@@ -41,5 +41,5 @@ VALUES
 ('Miller Light', 'Miller', 'Lager'),
 ('Miller High Life', 'Miller', 'Lager'),
 ('Obsidian Stout', 'Deschutes', 'Stout'),
-('420 Extra Pale Ale', 'SweetWater Brewing', 'Pale'),
+('420 Extra Pale Ale', 'SweetWater Brewing', 'Pale Ale'),
 ('Mirror Pond Ale', 'Deschutes', 'Pale Ale');
