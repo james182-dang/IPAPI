@@ -6,9 +6,16 @@ flex-shrink: inherit;
 .heading1{
 margin-left:auto;
 margin-right: auto;
+width: 70%;
 color: white;
 font-size: 100px;
 text-align: center;
+background: rgb(35,34,66);
+background: radial-gradient(circle, rgb(68, 61, 80) 9%, rgb(47, 42, 59) 77%);
+border-bottom: 1px solid rgb(255, 255, 255);
+border: 10%;
+text-shadow: -1px 0 rgb(187, 130, 55), 0 1px rgb(187, 130, 55), 1px 0 rgb(187, 130, 55), 0 -1px rgb(187, 130, 55);
+
 }
 .heading2{
 margin-left:auto;
