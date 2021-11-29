@@ -39,6 +39,13 @@ User.init(
                 isEmail: true
             }
         },
+        favorite: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'BeerType',
+                key: 'id'
+            }
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,

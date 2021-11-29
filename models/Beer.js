@@ -22,7 +22,10 @@ Beer.init(
         },
         beer_type: {
             type: DataTypes.STRING,
-            allowNull: false
+            references: {
+                model: 'BeerType',
+                key: 'id'
+            }
         },
         created_at: {
             type: DataTypes.TIME,
