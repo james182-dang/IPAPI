@@ -7,40 +7,76 @@
     <title>About</title>
     <style>
         body{
-            background-image: url("..//images/1105642.jpg");
+            background-image: url("..//images/ipApi.png");
             background-size:cover;
             
         }
         h1{
             color: white;
             opacity: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            
         }
         h2{
             color:white;
             opacity: 100%;
+            font-family: 'Courier New', Courier, monospace;
         }
         h3{
             color: white;
             opacity: 100%;
+            font-family: 'Courier New', Courier, monospace;
         }
         p{
             color:white;
             opacity: 100%;
+            font-family: 'Courier New', Courier, monospace;
         }
         .textBox{
-           margin-right: 20%;
-           margin-left: 20%;
+           margin-right: 10%;
+           margin-left: 10%;
             background-color:gray;
-            opacity: 70%;
+            opacity: 90%;
             padding: 5%;
            
         }
+        .signUp{
+            display:inline-block;
+            padding:0.5em 3em;
+            border:0.16em solid #FFFFFF;
+            text-transform:uppercase;
+            font-family:'Roboto',sans-serif;
+            font-weight:400;
+            color:#FFFFFF;
+            text-align:center;
+            transition: all 0.15s;
+            box-sizing:content-box;
+            text-decoration:none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+
+        }
+        a.signUp:hover{
+        color:#DDDDDD;
+        border-color:#DDDDDD;
+        }
+        a.signUp:active{
+        color:#BBBBBB;
+        border-color:#BBBBBB;
+        }
+
+        @media all and (max-width:30em){
+        a.button2{
+        display:block;
+        margin:0.4em auto;
+        }
+    }
 
     </style>
 </head>
 <body>
     <div  style= column-count:3;background-color:gray;>
-        <img src="../images/ipApi.png" style= width:12%>
         <h1>About IPAPI</h1>
         <button href="..//index.html"></button>
     </div>
@@ -63,9 +99,13 @@
                  <h3>Explore New Beers</h3>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, autem voluptas soluta fugit repudiandae suscipit rem libero ad eos cum quidem debitis sed incidunt hic deleniti qui, eius dolor! Iusto?
                  Blanditiis, tempore obcaecati eum ipsa nemo eligendi doloribus ad enim beatae, cupiditate suscipit alias culpa? Atque ducimus iure itaque eligendi ipsa modi necessitatibus voluptatibus veritatis, consectetur repudiandae sequi! Maxime, magni.</p>
-             </div>
+             
+            </div>
         </div>
+       
     </div>
+    <div class="textBox"> <a href="..//index.html" class="signUp">Sign Up Now</a></div>
+    
     
 </body>
 <link rel="..//stylesheet.css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
