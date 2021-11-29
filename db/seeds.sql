@@ -43,3 +43,4 @@ VALUES
 ('Obsidian Stout', 'Deschutes', 'Stout',  1),
 ('420 Extra Pale Ale', 'SweetWater Brewing', 'Pale',  1),
 ('Mirror Pond Ale', 'Deschutes', 'Pale Ale',  1);
+
