@@ -22,10 +22,7 @@ Beer.init(
         },
         beer_type: {
             type: DataTypes.STRING,
-            references: {
-                model: 'BeerType',
-                key: 'id'
-            }
+            allowNull: false
         },
         created_at: {
             type: DataTypes.TIME,
@@ -36,8 +33,10 @@ Beer.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'beer'
+        modelName: 'Beer'
     }
 );
+
+
 
 module.exports = Beer;

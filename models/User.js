@@ -42,7 +42,7 @@ User.init(
         favorite: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'BeerType',
+                model: 'Beer',
                 key: 'id'
             }
         },
@@ -69,8 +69,9 @@ User.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'User'
     }
 );
+
 
 module.exports = User;
