@@ -36,7 +36,7 @@ User.init(
             allowNull: false
         },
         favorite: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: true
         },
         password: {
