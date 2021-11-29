@@ -39,11 +39,11 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password,
         age: req.body.age,
         first_name: req.body.first_name,
-        state: req.body.state
+        state: req.body.state,
+        favorite: req.body.favorite
     })
       .then(dbUserData => {
           req.session.save(() => {

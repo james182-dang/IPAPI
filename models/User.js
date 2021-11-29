@@ -31,24 +31,13 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true
-            }
-        },
         state: {
             type: DataTypes.STRING,
             allowNull: false
         },
         favorite: {
             type: DataTypes.INTEGER,
-            references: {
-                model: 'Beer',
-                key: 'id'
-            }
+            allowNull: true
         },
         password: {
             type: DataTypes.STRING,
