@@ -6,46 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>IPAPI</title>
-    <style>
-        #body{
-            background-image: url("..//IPAPI/images/logofinal.gif");
-            background-size:cover;
-            flex-shrink: inherit;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="..//IPAPI/style.css">
 </head>
-<body id="body" >
-   <!--<header class="header" style="background-color: bisque;"> 
-       <div>
-        <img style="float: left; width: 5%;" src="./images/ipApi.png" alt="IPAPI logo">-->
-            
-        <h1  style="margin-left:auto; margin-right: auto;color: white;font-size: 100px;text-align: center;">IP<span style="font-size: 120px;">A</span>PI</h1>
-        <h2 style="margin-left:auto; margin-right: auto;color: white;font-size: 20px;text-align: center;font-weight: 100;font-style: italic; margin-top: 0;">Find your taste buds!</h2>
-        <!--  </div>
-    </header>-->
+<body class="body">
+        <h1 class="heading1">IP<span style="font-size: 120px;">A</span>PI</h1>
+        <h2 class="heading2">Find your taste buds!</h2>
     <br>
-    <table style="table-layout: fixed; width: 50%; margin: auto; border: 1px groove rgb(9, 2, 37);" class="signup-table">
-        <tr style="border: 1px groove black">
-            <th colspan="2" style="text-align: center; background-color: white;border-radius: 5px;">
+    <div class="signup-boarder">
+    <table class="signup-table" >
+        <tr>
+            <th class="welcome-message" colspan="2">
                 <h2>
                 Sign Up Here
                 </h2>
             </th>
         </tr>
-        <tr style="border: 1px groove black">
-            <td style="border: 1px groove black;">
+        <tr>
+            <td>
                 <input type="text" placeholder="Username" name="username" id="username" class="form-control" />
             </td>
-            <td style="border: 1px groove black">
+            <td>
                 <input type="text" placeholder="Name" name="name" id="name" class="form-control" />
             </td>
         </tr>
-        <tr style="border: 1px groove black">
-            <td style="border: 1px groove black">
+        <tr>
+            <td>
                 <input type="password" placeholder="Password" name="Password" id="Password" class="form-control" />
             </td>
-            <td style="border: 1px groove black">
+            <td >
                     <select id="inputState" class="form-control">
                         <option selected>Choose Your State</option>
                         <option>AL</option>
@@ -104,11 +92,11 @@
                     </select>
             </td>
         </tr>
-        <tr style="border: 1px groove black">
-            <td style="border: 1px groove black">
+        <tr>
+            <td>
                 <input type="text" placeholder="Age" name="Age" id="Age" class="form-control" />
             </td>
-            <td style="border: 1px groove black">
+            <td>
                 <select id="inputState" class="form-control">
                     <option selected>Choose Your Favorite Beer type</option>
             </td>
@@ -116,8 +104,9 @@
    
         
     </table>
+</div>
     <br>
-    <section style="width: 10%; margin: auto; text-align: center;color: rgb(2, 2, 27)">
+    <section class="button-style">
             <button type="submit" class="btn btn-primary">
             Sign Up
             </button>
