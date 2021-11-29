@@ -4,7 +4,6 @@
 
     <br>
     <div class="signup-boarder">
-    <form class="signup-form">
     <table class="signup-table">
         <tr>
             <th class="welcome-message" colspan="2">
@@ -13,17 +12,18 @@
                 </h2>
             </th>
         </tr>
+        <form class="signup-form">
         <tr>
             <td>
-                <input type="text" placeholder="Username" name="username" id="username" class="form-control" />
+                <input type="text" placeholder="Username" name="username" id="username-signup" class="form-control" />
             </td>
             <td>
-                <input type="text" placeholder="Name" name="name" id="name" class="form-control" />
+                <input type="text" placeholder="Name" name="name" id="firstName-signup" class="form-control" />
             </td>
         </tr>
         <tr>
             <td>
-                <input type="password" placeholder="Password" name="Password" id="Password" class="form-control" />
+                <input type="password" placeholder="Password" name="Password" id="password-signup" class="form-control" />
             </td>
             <td >
                     <select id="inputStateState" class="form-control">
@@ -86,7 +86,7 @@
         </tr>
         <tr>
             <td>
-                <input type="text" placeholder="Age" name="Age" id="Age" class="form-control" />
+                <input type="text" placeholder="Age" name="Age" id="age-signup" class="form-control" />
             </td>
             <td>
                 <select id="inputStateDrink" class="form-control">
@@ -99,6 +99,11 @@
                     <option value="Pale">Pale</option>
             </td>
         </tr>
+            <section class="button-style">
+                <button type="submit" class="btn btn-primary signup-form">
+                Sign Up
+                </button>
+            </section>
         
     </table>
     </form>
@@ -107,9 +112,5 @@
     </div>
 </div>
     <br>
-    <section class="button-style">
-            <button type="submit" class="btn btn-primary">
-            Sign Up
-            </button>
-    </section>
-<script src="../public/javascript/login.js"></script>
+
+<script src="/javascript/login.js"></script>

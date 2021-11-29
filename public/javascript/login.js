@@ -8,7 +8,7 @@ async function signupFormHandler(event) {
     const favorite = document.querySelector('#inputStateDrink').value.trim();
     const state = document.querySelector('#inputStateState').value.trim();
 
-    if (username && email && password && age && firstName) {
+    if (username && favorite && state && password && age && firstName) {
         const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({
@@ -24,6 +24,7 @@ async function signupFormHandler(event) {
 
         if (response.ok) {
             console.log('success');
+            document.location.replace('/profile');
         } else {
             alert(response.statusText);
         }
