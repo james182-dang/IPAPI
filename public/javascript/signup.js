@@ -32,4 +32,4 @@ async function signupFormHandler(event) {
     }
 }
 
-document.querySelector('.signup-button').addEventListener('submit', signupFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
