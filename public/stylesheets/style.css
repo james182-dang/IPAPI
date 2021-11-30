@@ -1,7 +1,8 @@
-.body{
- background-image: url("..//IPAPI/images/logofinal.gif");
+.body {
  background-size:cover;
-flex-shrink: inherit;
+ flex-shrink: inherit;
+ background: rgb(35,34,66);
+ background: radial-gradient(circle, rgb(68, 61, 80) 9%, rgb(47, 42, 59) 77%);
 }
 .heading1{
 margin-left:auto;

@@ -2,7 +2,7 @@
     <h1 class="profileH1"  style=>IP<span style="font-size: 70px; color: rgb(173, 119, 53);">A</span>PI</h1>
         <section class="Profile-Name">
             <h2 class="welcome-user">Welcome, {{User.username}}</h2>
-            <h3>{{User.first_name}}</h2>
+            <h3>Your first name is {{User.first_name}}!</h2>
             <h3 >You like {{User.favorite}}</h3>
             <h3 >Here are your local beer buds!</h3>
             <h3> 
@@ -16,4 +16,6 @@
             </h3>
         </section>
 </section>
+<button type="submit" class="btn btn-primary" id="messaging">Messaging</button>
+<button type="submit" class="btn btn-primary" id="logout">Logout</button>
 <script src="/public/javascript/logout.js"></script>
