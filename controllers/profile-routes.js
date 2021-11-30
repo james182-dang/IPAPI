@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         ]
     })
       .then(dbUserData => {
-          const user = dbUserData.get({ plain: true });
+          const User = dbUserData.get({ plain: true });
           res.render('profile', { User, loggedIn: true });
       })
       .catch(err => {
@@ -36,7 +36,7 @@ router.get('/messaging', (req, res) => {
         ]
     })
       .then(dbUserData => {
-          const user = dbUserData.get({ plain: true });
+          const User = dbUserData.get({ plain: true });
           res.render('messaging', { User, loggedIn: true });
       })
       .catch(err => {
