@@ -26,7 +26,7 @@ async function signupFormHandler(event) {
             console.log('success');
             document.location.replace('/profile');
         } else {
-            console.log();
+            console.log(response);
             alert(response.statusText);
         }
     }
