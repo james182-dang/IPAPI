@@ -46,13 +46,14 @@ router.post('/', (req, res) => {
         favorite: req.body.favorite
     })
       .then(dbUserData => {
-          req.session.save(() => {
-              req.session.user_id = dbUserData.id;
-              req.session.username = dbUserData.username;
-              req.session.loggedIn = true;
+        res.redirect('/login');
+        //   req.session.save(() => {
+        //       req.session.user_id = dbUserData.id;
+        //       req.session.username = dbUserData.username;
+        //       req.session.loggedIn = true;
 
-              res.json(dbUserData);
-          });
+        //       res.json(dbUserData);
+        //   });
       })
       .catch(err => {
           console.log(err);
